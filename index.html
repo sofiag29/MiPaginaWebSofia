@@ -1,97 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>My Website</title>
+  <style>
+    
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #fceef4;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;  
+      margin-top: 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    aside {
+      background-color: #f8dce8;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #e8a5c2;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      color: #4a2035;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background-color: #e8a5c2;
+      border-radius: 8px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>Mi espacio personal</title>
 </head>
 
- <link rel="stylesheet" href="style.css">
+<body>
+  <h1> ESPACIO PERSONAL</h1>
 
-<body style="background-image: url('img/img_background.png'); background-size: cover; background-position: center;                        background-repeat: no-repeat;">
-    <header>
-        <img src="./img/images.jpg" alt="">
-        <h1>Welcome to My Website</h1>
-        <ul>
-            <li><a href="inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre Mi</a></li>
-            <li><a href="#horario">Horario</a></li>
-            <li><a href="contactos.html">Contacto</a></li>
-        </ul>
-    </header>
-    <main>
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenido a mi sitio web. Aqui podras encontrar informacion sobre mi y mis proyectos.</p>
-        <!-- <img src="img/images.jpg" alt="Imagen de disney o pixar" width="500" height="500"> -->
-        </section>
-        <section id="sobre-mi">
-            <label for="name">Carrera:</label>
-            <select>
-                <option value="carrea-1">Tecnica</option>
-                <option value="carrea-2">Tecnologica</option>
-                <option value="carrea-3">Profesional</option>
-                <option value="carrea-4">Maestria</option>
-            </select>
-            <!-- Radio buttons: -->
-            <p>Radio buttons:</p>
-            <input type="radio" id="option1" name="options" value="option1">
-            <label for="option1">Desarrollo Web 1</label>
-            <input type="radio" id="option2" name="options" value="option2">
-            <label for="option2">Ciencia de datos 2</label>
-            <input type="radio" id="option3" name="options" value="option3">
-            <label for="option3">Inteligencia Atificial 3</label>
-            <p>Todo comienza aqui.</p>
-        </section>
-        <section id="horario">
-            <h2>Horario</h2>
-            <table border="1">
-                <tr>
-                    <th>Dia</th>
-                    <th>Hora de Inicio</th>
-                    <th>Hora de Fin</th>
-                </tr>
-                <tr>
-                    <td>Lunes</td>
-                    <td>8:00 AM</td>
-                    <td>5:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Martes</td>
-                    <td>8:00 AM</td>
-                    <td>5:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Miercoles</td>
-                    <td>8:00 AM</td>
-                    <td>5:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Jueves</td>
-                    <td>8:00 AM</td>
-                    <td>5:00 PM</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>8:00 AM</td>
-                    <td>5:00 PM</td>
-                </tr>
-            </table>
+  <p>Organiza tus actividades,
+    tus ideas y tu negocio en un solo lugar.</p>
 
-        </section>
-        <section id="contacto">
-            <h2>Contactanos</h2>
-            <form>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Correo Electronico:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Mensaje:</label><br>
-                < id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                    <input type="submit" value="Enviar">
-            </form>
-        </section>
 
-    </main>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#herramientas">Herramientas</a>
+  <a href="#planificacion">Planificación</a>
+  <a href="#opinion">Opiniones</a>
+</nav>
+<main>
+  <section>
+    <h2>¿Qué es mi espacio personal?</h2>
+
+    <p>
+      Es una herramienta diseñada para organizar
+      actividades personales, académicas y laborales.
+    </p>
+
+    <h2>Nuestras herramientas</h2>
+
+    <p>
+      Aquí puedes encontrar diferentes opciones
+      para administrar tu tiempo y tu información.
+    </p>
+    <h2 id="herramientas">Mis herramientas</h2>
+    <ul>
+      <li>Organización de tareas</li>
+      <li>Notas personales</li>
+      <li>Control de gastos</li>
+      <li>Administración de inventario</li>
+      <li>Recordatorios</li>
+    </ul>
+    <h2>Queremos conocer tu opinión</h2>
+
+    <p>¿Qué es lo que más te gustaría mejorar en tu vida diaria?</p>
+
+    <select id=opcion name="opinion">
+      <option value="tiempo">Organizar mejor mi tiempo</option>
+      <option value="habitos">Crear mejores hábitos</option>
+      <option value="metas">Cumplir mis metas personales</option>
+      <option value="dinero">Administrar mejor mi dinero</option>
+      <option value="bienestar">Cuidar mi bienestar emocional</option>
+      <option value="aprendizaje">Aprender cosas nuevas</option>
+    </select>
+
+    <h2 id="herramientas">Mi planificación de actividades semanal</h2>
+
+    <table border="1">
+      <tr>
+        <th>Día</th>
+        <th>Actividad</th>
+        <th>Horario</th>
+      </tr>
+
+      <tr>
+        <td>Lunes</td>
+        <td>
+          <select>
+            <option>Seleccionar actividad</option>
+            <option>Estudiar</option>
+            <option>Trabajar</option>
+            <option>Leer</option>
+            <option>Hacer ejercicio</option>
+            <option>Organizar pendientes</option>
+            <option>Descansar</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Seleccionar horario</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Martes</td>
+        <td>
+          <select>
+            <option>Seleccionar actividad</option>
+            <option>Estudiar</option>
+            <option>Trabajar</option>
+            <option>Leer</option>
+            <option>Hacer ejercicio</option>
+            <option>Organizar pendientes</option>
+            <option>Descansar</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Seleccionar horario</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Miércoles</td>
+        <td>
+          <select>
+            <option>Seleccionar actividad</option>
+            <option>Estudiar</option>
+            <option>Trabajar</option>
+            <option>Leer</option>
+            <option>Hacer ejercicio</option>
+            <option>Organizar pendientes</option>
+            <option>Descansar</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Seleccionar horario</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Jueves</td>
+        <td>
+          <select>
+            <option>Seleccionar actividad</option>
+            <option>Estudiar</option>
+            <option>Trabajar</option>
+            <option>Leer</option>
+            <option>Hacer ejercicio</option>
+            <option>Organizar pendientes</option>
+            <option>Descansar</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Seleccionar horario</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Viernes</td>
+        <td>
+          <select>
+            <option>Seleccionar actividad</option>
+            <option>Estudiar</option>
+            <option>Trabajar</option>
+            <option>Leer</option>
+            <option>Hacer ejercicio</option>
+            <option>Organizar pendientes</option>
+            <option>Descansar</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Seleccionar horario</option>
+            <option>Mañana</option>
+            <option>Tarde</option>
+            <option>Noche</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <h2 id="herramientas">Tu opinión es importante</h2>
+
+    <p>¿Qué te parece nuestro espacio personal?</p>
+
+    <input type="radio" name="satisfaccion" value="excelente">
+    <label>Excelente</label>
+
+    <br>
+
+    <input type="radio" name="satisfaccion" value="bueno">
+    <label>Muy bueno</label>
+
+    <br>
+
+    <input type="radio" name="satisfaccion" value="regular">
+    <label>Podría mejorar</label>
+
+    <br>
+
+    <input type="radio" name="satisfaccion" value="malo">
+    <label>No es lo que esperaba</label>
+  </section>
+  <aside>
+    <h2>Consejos para organizarte</h2>
+
+    <p>1. Organiza tus actividades cada día.</p>
+
+    <p>2. Anota tus tareas pendientes.</p>
+
+    <p>3. Establece horarios para cumplir tus metas.</p>
+  </aside>
+</main>
+<footer>
+  <p>Mi espacio personal - Organiza tu vida, cumple tus metas.</p>
+  <p>Gracias por visitar mi página.</p>
+</footer>
+
+</div>
 </body>
 
 </html>
